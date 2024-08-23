@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .input1{
+        font-size: 25px;
+        padding: 10px;
+        border-radius: 15px;
+        border: 4px solid black;
+      }
+    </style>
+</head>
+<body>
+    
+   <h1 style="text-align: center;font-size: 48px;font-weight: 700;font-family: 'Times New Roman', Times, serif;">Basic Calculator</h1>
+
+   <button style="font-size: 30px;padding: 10px;border-radius: 15px;" onclick="add()">Add </button>
+   <button style="font-size: 30px;padding: 10px;border-radius: 15px;" onclick="sub()">Sub</button>
+   <button style="font-size: 30px;padding: 10px;border-radius: 15px;" onclick="mult()">Mult</button>
+   <button style="font-size: 30px;padding: 10px;border-radius: 15px;" onclick="div()">Div</button>
+
+   <input type="number" name="first" id="first" placeholder="Enter your value"  class="input1">
+   <input type="number" name="second" id="second" placeholder="Enter your value" class="input1">
+
+   <input type="number" readonly id="result"placeholder="Result" onclick="data()" class="input1">
+
+
+
+
+ <script>
+   function add() {
+     var a= document.getElementById('first').value;
+     var b= document.getElementById('second').value;
+     result=parseInt(a)+parseInt(b);
+     document.getElementById('result').value = result;
+     
+   }
+
+   function sub() {
+     var a= document.getElementById('first').value;
+     var b= document.getElementById('second').value;
+     result=a-b;
+     document.getElementById('result').value = result;
+     
+   }
+
+   function mult() {
+     var a= document.getElementById('first').value;
+     var b= document.getElementById('second').value;
+     result=a*b;
+     document.getElementById('result').value = result;
+     
+   }
+
+   function div() {
+     var a= document.getElementById('first').value;
+     var b= document.getElementById('second').value;
+     result=a/b;
+     document.getElementById('result').value = result;
+     
+   }
+
+ </script> 
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="text">Text:</label>
+    <input type="text" id="text" onclick="text()">     >
+    <br>
+
+    <label for="text">Font size:</label>
+    <input type="range" min="0px" max="100px" id="fontsize" onchange="fontsize()">
+    <br>
+
+    <label for="text">Font Family:</label>
+    <select>
+    <option value="Default">Default</option>
+    <option value="monospace">monospace</option>
+    <option value="serif">serif</option>
+    <option value="cursive">cursive</option>
+    </select>
+    <br>
+    
+    <label for="text">Font color:</label>
+    <input type="text">
+    <hr>
+
+    <label for="text">Position</label>
+    <select>
+    <option value="Default">Default</option>
+    <option value="Adsolute">Absolute</option>
+    <option value="relative">relative</option>
+    <option value="fixed">fixed</option>
+    </select>
+   <br>
+
+   <label for="Text">Height:</label>
+   <input type="number">
+   <br>
+ 
+   <label for="Text">Width:</label>
+   <input type="number">
+   <br>
+
+   <label for="text">Brightness:</label>
+    <input type="range">
+    <br>
+
+    <label for="text">Invert:</label>
+    <input type="range">
+    <br>
+
+    <label for="text">grayscale:</label>
+    <input type="range">
+    <br>
+
+    <label for="text">Saturate:</label>
+    <input type="range">
+    <br>
+
+    <label for="text">Border radius:</label>
+    <input type="range">
+    
+
+    <div>
+        <img  src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        <h1 id="heading"></h1>
+    </div>
+
+    <script>
+         function text(){
+            var text = document.getElementById('text').value;
+            document.getElementById('heading').innerText = text;
+         }
+
+         function fontsize(){
+            var size = document.getElementById('fontsize').value;
+            document.getElementById('heading').innerText.stylesize;
+         }
+    </script>
+</body>
+</html>
